@@ -1,0 +1,221 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-juanpphotoandvideo-1242348.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 50px;
+    padding-block: 20px;
+    width: max-content;
+    height: max-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
+}
+
+.login>input{
+    border-radius: 10px;
+    border-style: dotted;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.signup{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 50px;
+    padding-block: 20px;
+    width: max-content;
+    height: max-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
+}
+
+.signup>input{
+    border-radius: 10px;
+    border-style: dotted;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8c28a7cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+button:hover {
+    background-color: #702188c3;
+}
+
+button:active{
+    translate: 1px 1px;
+}
+
+#signup, #login {
+    margin-bottom: 20px;
+}
+
+
+.messaging-container {
+    display: flex;
+}
+
+.messaging{
+    background-color: rgba(255, 255, 255, 0.626);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+#user-list {
+    width: 150px;
+    word-break: break-all;
+    margin-top: 20px;
+    max-height: 435px;
+    height: 435px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#user-list>div{
+    transition: 0.5s;
+}
+
+#user-list>div:active{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.user {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+.user:hover {
+    background-color: #e0e0e0;
+}
+
+#chat-container {
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#chat-container>button{
+    width: 50%;
+}
+#messages {
+    margin-top: 20px;
+    max-height: 400px;
+    height: 400px;
+    overflow-y: scroll; /* Otomatik scrollbar gösterimi */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+.mInput{
+    width: 80%;
+    margin: auto;
+    margin-block: 10px;
+}
+
+#messages::-webkit-scrollbar {
+    display: none; /* Scrollbar'ı gizleme (yalnızca WebKit tarayıcıları için geçerli) */
+}
+
+
+.cont{
+    display: flex;
+    width: 171.8px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cont>button{
+    width: 100%;
+}
+
+.messaging>h2{
+    margin: 2px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.message.sent {
+    justify-self: flex-end;
+    align-self: flex-end;
+    background-color: rgba(210, 104, 233, 0.808);
+    border-radius: 10px 0px 10px 10px;
+    text-align: right;
+    max-width: 60%;
+    width: max-content;
+}
+
+.message.received {
+    justify-self: flex-start;
+    justify-self: flex-start;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    max-width: 60%;
+    width: max-content;
+}
