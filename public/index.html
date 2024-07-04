@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sqlite ChatApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div id="login" class="login">
+            <h2>Login</h2>
+            <input type="text" id="login-name" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="logIn()">Log In</button>
+            <button onclick="showSignUp()">Sign Up</button>
+        </div>
+        <div id="signup" class="signup" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="email" id="signup-name" placeholder="Username">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button onclick="signUp()">Sign Up</button>
+            <button onclick="showLogin()">Back to Login</button>
+        </div>
+        <div id="messaging" class="messaging" style="display: none;">
+            <h2>Messaging</h2>
+            <div class="cont">
+                Logged in as: <span id="logged-in-user"></span>
+                <button onclick="logOut()">Log Out</button>
+            </div>
+            <div class="messaging-container">
+                <div id="user-list"></div>
+                <div id="chat-container">
+                    <div id="messages"></div>
+                    <input type="text" id="message" class="mInput" placeholder="Message" minlength="1" required>
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
